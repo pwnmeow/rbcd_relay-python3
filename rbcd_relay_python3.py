@@ -218,7 +218,7 @@ class LDAPSRelayClient(LDAPRelayClient):
 #   Alberto Solino (@agsolino)
 #   Matt Bush (@3xocyte)
 #   Elad Shamir (@elad_shamir)
-
+#   Ported By ( @Beingsheerazali )
 
 class HTTPRelayServer(Thread):
     class HTTPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
@@ -425,7 +425,7 @@ if __name__ == '__main__':
                         help=' name of object to add attribute FOR (this should be an account that has an SPN and that you already control)')
     options = parser.parse_args()
 
-    print("=> PoC RBCD relay attack tool by @3xocyte and @elad_shamir, from code by @agsolino and @_dirkjan")
+    print("=> PoC RBCD relay attack tool by @3xocyte and @elad_shamir, from code by @agsolino and @_dirkjan. Ported by @beingsheerazali")
 
     print("[+] target is %s" % options.target.upper())
     print("[*] starting hybrid http/webdav server...")
